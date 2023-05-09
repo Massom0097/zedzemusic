@@ -53,7 +53,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         [
             InlineKeyboardButton(
                 text="🌱ƨσʋяcɛ🌱",
-                url=f"https://github.com/team-katil/zedzemusic",
+                url=f"https://te.legra.ph/file/d5da54dd7eb2772bac83e.mp4",
             )
         ],
      ]
