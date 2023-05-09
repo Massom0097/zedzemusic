@@ -117,7 +117,7 @@ START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/2a4bbba8af416a
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/07b109ac650e5f4fec9e5.jpg",
+    "https://te.legra.ph/file/e17ffd7291a24ad9e4f9a.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://telegra.ph/file/1dca3157eb1d637846d87.jpg"
@@ -148,7 +148,7 @@ def time_to_seconds(time):
     return sum(
         int(x) * 60**i
         for i, x in enumerate(reversed(stringt.split(":")))
-    )
+    
 
 
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
@@ -167,9 +167,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://telegra.ph/file/07b109ac650e5f4fec9e5.jpg"
+            PING_IMG_URL = "https://te.legra.ph/file/e17ffd7291a24ad9e4f9a.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://telegra.ph/file/ff3d94744211c796cf5bb.jpg"
+            START_IMG_URL = "https://te.legra.ph/file/2a4bbba8af416a754c995.jpg"
